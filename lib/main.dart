@@ -1,4 +1,5 @@
-import 'package:delivery_thizer/login.dart';
+import 'package:delivery_thizer/app/ui/auth/login.dart';
+import 'package:delivery_thizer/app/ui/counter.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -26,6 +27,9 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: LoginPage(),
+      routes: {
+        '/counter': (_) => Counter(),
+      },
     );
   }
 }
